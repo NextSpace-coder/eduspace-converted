@@ -6,17 +6,14 @@
 //   plugins: [react()],
 // })
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import viteTagger from 'vite-tagger';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import viteTagger from "vite-tagger";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    viteTagger({ prefixName: "wb" })
-  ],
+  plugins: [react(), viteTagger({ prefixName: "wb" })],
   build: {
-    outDir: 'dist',
+    outDir: "dist",
   },
   server: {
     host: "::",
@@ -25,4 +22,3 @@ export default defineConfig({
     allowedHosts: true,
   },
 });
-
